@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+@media (min-width: 742px) {
+    .container {
+        width: 676px;
+    }
+}
+
+/* medium screens */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large screens */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+body {
+    background: snow;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 8%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    margin: 0 20px;
+    transition: .3s;
+    text-transform: capitalize;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.navbar a:hover {
+    color: rgb(70, 240, 121);
+}
+
+.social-media {
+    width: 150px;
+    height: 40px;
+    /* للتوضيح بس مش اكتر  */
+    /* background: purple; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    width: 37px;
+    height: 37px;
+    border: 2px solid transparent;
+    text-decoration: none;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.social-media a:hover {
+    transition: 0.5s;
+    padding: 5px;
+}
+
+.social-media a i {
+    font-size: 24px;
+    color: black;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 50px 8% 0;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.home-content {
+    max-width: 620px;
+}
+
+.home-content h1 {
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size: 40px;
+    line-height: 1.2;
+    color: rgb(0, 219, 66);
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 15px 0 30px;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+.btn {
+    text-decoration: none;
+    color: whitesmoke;
+    display: inline-block;
+    padding: 10px 28px;
+    background: black;
+    border: 2px solid black;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.btn:hover {
+    background: transparent;
+    color: black;
+}
+
+.home-img {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    right: -10%;
+}
+
+.home-img .pic-of-me {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: snow;
+    border: 25px solid rgb(0, 219, 66);
+    overflow: hidden;
+    box-shadow: -15px 15px 15px rgb(0, 0, 0, .2);
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.home-img .pic-of-me img {
+    position: absolute;
+    max-width: 750px;
+    top: -90px;
+    left: -144px;
+    z-index: 999;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+.home .pic-of-me-2 {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    top: -25%;
+    right: -25%;
+    z-index: -999;
+    transform: rotate(-45deg);
+    background: rgb(0, 219, 66);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
